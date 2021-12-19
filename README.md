@@ -1,34 +1,58 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## smp - coding challange
 
-First, run the development server:
+Entwicklungsserver starten:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Applikation mit folgendem Link öffnen: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Anforderungen - Swiss Media Partners
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Programmiersprache HTML, PHP, Typescript, Javascript frei wählbar
+- Eigenständiges HTML oder npm projekt welches mit npm start gestartet werden kann oder PHP etc.
+- CSS/Layout Frameworks frei wählbar oder Vanilla CSS/Javascript
+- README.md Datei mit der Beschreibung wie die Seite zu nutzen ist und Auflistung der Funktionalitäten/was es kann
+- Als ZIP per E-Mail oder Github Repo.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Funktionalitäten:
 
-## Learn More
+- Benutzername Feld mit Verifikation, dass es eine E-Mail-Adresse ist
+- Passwort Feld
+- Weitere Felder (falls SignUp Form)
 
-To learn more about Next.js, take a look at the following resources:
+Weitere Funktionen nach eigenem Ermessen.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Umsetzung:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Serverseitig
 
-## Deploy on Vercel
+> Es können neue User angelegt werden. Die User werden dann in der data/users.json Datei abgelegt.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##### Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- api/users/newusers
+- api/users/login
+
+### Clientseitig
+
+> Es können neue User registriert werden. Die Daten werden geprüft und bei korrektem Login wird ein JSON Webtoken zurückgegeben (siehe Konsole - ACHTUNG: ist nicht im Browser Storage implementiert)
+
+##### Routes
+
+- http://localhost:3000/
+- http://localhost:3000/registrieren
+
+### Packages/CLI
+
+- Nextjs mit Typscript (Typescript strict Mode)
+- Material-ui core
+- Material-ui icon
+- axios
+- jsonwebtoken
+- bcrypt
+- React-Hook-Form
+- Notistack
