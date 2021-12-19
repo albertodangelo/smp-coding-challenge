@@ -48,7 +48,7 @@ Weitere Funktionen nach eigenem Ermessen.
 
 ### Packages/CLI
 
-- Nextjs mit Typscript (Typescript strict Mode)
+- Nextjs mit Typescript (Typescript strict Mode)
 - Material-ui core
 - Material-ui icon
 - axios
