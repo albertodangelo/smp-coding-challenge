@@ -39,7 +39,7 @@ Weitere Funktionen nach eigenem Ermessen.
 
 ### Clientseitig
 
-> Es können neue User registriert werden. Die Daten werden geprüft und bei korrektem Login wird ein JSON Webtoken zurückgegeben (siehe Konsole - ACHTUNG: ist nicht im Browser Storage implementiert)
+> Es können neue User registriert werden. Die Daten werden geprüft und bei korrektem Login wird ein JSON Webtoken zurückgegeben (siehe Network Tab - ACHTUNG: ist nicht im Browser Storage implementiert)
 
 ##### Routes
 
