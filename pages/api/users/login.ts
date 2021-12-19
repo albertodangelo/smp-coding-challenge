@@ -30,7 +30,6 @@ function handler(req: NextApiRequest, res: NextApiResponse) {
   const filePath = buildnewUserPath();
   const data = handlenewUserData(filePath);
 
-  console.log(data);
   const email = req.body.email;
   const password = req.body.password;
 
