@@ -1,6 +1,5 @@
 import {
   Grid,
-  Avatar,
   Paper,
   TextField,
   Typography,
